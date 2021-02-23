@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="lawList"></div>
+    <script type="text/javascript">
+    function lawLoop(laws) {
+        let i=0;
+        let list = "";
+
+        for (i=0;i<laws.result.items.length;i++) {
+            let lawName = laws.result.items[i].name;
+            list = list + "<p>" + lawName + "</p>";
+        }
+        document.getElementById("lawList").innerHTML = list;
+    }
+    const laws = {
+        "success" : true,
+        "message" : "Listing of consolidated and unconsolidated NYS Laws",
+        "responseType" : "law-info list",
+        "total" : 135,
+        "offsetStart" : 1,
+        "offsetEnd" : 4,
+        "limit" : 4,
+        "result" : {
+            "items" : [ {
+            "lawId" : "ABC",
+            "name" : "Alcoholic Beverage Control",
+            "lawType" : "CONSOLIDATED",
+            "chapter" : "3-B"
+            }, {
+            "lawId" : "ABP",
+            "name" : "Abandoned Property",
+            "lawType" : "CONSOLIDATED",
+            "chapter" : "1"
+            }, {
+            "lawId" : "ACA",
+            "name" : "Arts and Cultural Affairs",
+            "lawType" : "CONSOLIDATED",
+            "chapter" : "11-C"
+            }, {
+            "lawId" : "ACG",
+            "name" : "Alternative County Government",
+            "lawType" : "CONSOLIDATED",
+            "chapter" : "11-B"
+            }, {
+            "lawId" : "BUR",
+            "name" : "Burglary",
+            "lawType" : "CONSOLIDATED",
+            "chapter" : "1"
+            },],
+            "size" : 5
+        }
+    }
+    lawLoop(laws);
+    console.log(laws);
+    
+    </script>
+</body>
+</html>

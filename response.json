@@ -1,0 +1,33 @@
+{
+  "success" : true,
+  "message" : "Listing of consolidated and unconsolidated NYS Laws",
+  "responseType" : "law-info list",
+  "total" : 135,
+  "offsetStart" : 1,
+  "offsetEnd" : 4,
+  "limit" : 4,
+  "result" : {
+    "items" : [ {
+      "lawId" : "ABC",
+      "name" : "Alcoholic Beverage Control",
+      "lawType" : "CONSOLIDATED",
+      "chapter" : "3-B"
+    }, {
+      "lawId" : "ABP",
+      "name" : "Abandoned Property",
+      "lawType" : "CONSOLIDATED",
+      "chapter" : "1"
+    }, {
+      "lawId" : "ACA",
+      "name" : "Arts and Cultural Affairs",
+      "lawType" : "CONSOLIDATED",
+      "chapter" : "11-C"
+    }, {
+      "lawId" : "ACG",
+      "name" : "Alternative County Government",
+      "lawType" : "CONSOLIDATED",
+      "chapter" : "11-B"
+    } ],
+    "size" : 4
+  }
+}
