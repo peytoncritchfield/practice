@@ -27,7 +27,12 @@
       "name" : "Alternative County Government",
       "lawType" : "CONSOLIDATED",
       "chapter" : "11-B"
-    } ],
+    }, {
+      "lawId" : "BUR",
+      "name" : "Burglary",
+      "lawType" : "CONSOLIDATED",
+      "chapter" : "1"
+      }],
     "size" : 4
   }
 }
