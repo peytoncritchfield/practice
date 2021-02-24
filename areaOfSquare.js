@@ -12,4 +12,8 @@ let areaOfSquare = function (x1,x2,y1,y2) {
 
 areaOfSquare (2,3,5,7)
 
+let volumeOfSquare = function () {
+    
+} 
+
 
