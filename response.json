@@ -28,7 +28,7 @@
       "lawType" : "CONSOLIDATED",
       "chapter" : "11-B"
     }, {
-      "lawId" : "test"
+      "lawId" : "no-test"
     }],
     "size" : 4
   }
