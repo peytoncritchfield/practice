@@ -9,49 +9,17 @@
 
 <body>
 
-    <h1>Area of a Square</h1>
-    <p> x1 : <input type="text" id="x1" value="2"></p>
-    <p> x2 : <input type="text" id="x2" value="3"></p>
-    <p> y1 : <input type="text" id="y1" value="5"></p>
-    <p> y2 : <input type="text" id="y2" value="7"></p>
+    <h1>Volume of a Square</h1>
+    <p> x1 : <input type="number" id="x1" value="2"></p>
+    <p> x2 : <input type="number" id="x2" value="3"></p>
+    <p> y1 : <input type="number" id="y1" value="5"></p>
+    <p> y2 : <input type="number" id="y2" value="7"></p>
+    <p> z1 : <input type="number" id="z1" value="8"></p>
+    <p> z2 : <input type="number" id="z2" value="11"></p>
     <button onclick="getValues()">Compute</button>
     <p id="output1"></p>
-    <button onclick="getSquared()">Squared</button>
     <p id="output2"></p>
-    <script type="text/javascript">
-        let answer = 0;
-
-        let getValues = function () {
-           let x1 = document.getElementById("x1").value;
-           let x2 = document.getElementById("x2").value;
-           let y1 = document.getElementById("y1").value;
-           let y2 = document.getElementById("y2").value;
-           let output1 = document.getElementById("output1");
-           
-           answer = areaOfSquare (x1, x2, y1, y2);
-            output1.innerHTML = answer;
-        }
-
-        let areaOfSquare = function (x1, x2, y1, y2) {
-            heightOfSquare = y1 - y2;
-            widthOfSquare = x2 - x1;
-            area = heightOfSquare * widthOfSquare;
-            if (area >= 0) {
-                return area;
-            }
-            else {
-                return -area;
-                }
-        }
-        let getSquared = function () {
-            areaSquared = answer * answer;
-            let output2 = document.getElementById("output2");
-            output2.innerHTML = areaSquared;
-        }
-        
-            
-    
-    </script>
+    <script src="volumeOfSquare.js"></script>
 
 </body>
 </html>
